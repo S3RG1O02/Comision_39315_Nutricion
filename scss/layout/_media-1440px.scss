@@ -1,0 +1,275 @@
+@media (min-width: 1440px) {
+
+// HOME PAG
+
+// Section 1 home 
+.section1_home {
+    img {
+        height: 71.7rem;
+    }
+    h1 {
+        font-size: 9rem;
+        line-height: 12.6rem;
+        top: 10%;
+    }
+    p {
+        top: 50%;
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+}
+
+// Section 2 home 
+
+.section2_home {
+    height: 400px;
+    margin: 6rem 2rem;
+    .list_home {
+        height: 400px;
+    }
+}
+
+// Section 3 home
+
+.section3_home {
+    grid-template-columns: 45% 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-bottom: 10rem;
+
+    .img_section3_home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 51.9rem;
+            height: 31.3rem;
+        }
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        margin: 5rem 1rem 3rem 1.5rem;
+        line-height: 4.48rem;
+    }
+
+    h3 {
+        font-size: 6rem;
+        line-height: 8.4rem;
+    }
+
+    p {
+        font-size: 3.1rem;
+        line-height: 4.48rem;
+    }
+}
+
+// Section 2 about
+
+.section2_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h2_about img_about"
+    "p_about img_about";
+
+    h2 {
+        grid-area: h2_about;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    p {
+        grid-area: p_about;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    img {
+        grid-area: img_about;
+        padding: 4rem 2rem;
+    }
+}
+
+// Section 3 about
+
+.section3_about{
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img_about p_about";
+    
+    p {
+        height: 100%;
+        margin-top: 19%;
+        padding: 0 5rem;
+        grid-area: p_about;
+        text-align: right;
+        font-size: 5rem;
+    }
+
+    img {
+        grid-area: img_about;
+        padding: 6rem 3rem;
+    }
+}
+
+// PAG SERVICES BOOSTRAP
+
+// Section 1 services
+
+.section1_services  { 
+    img {
+    height: 70rem;
+    }
+    h1 {
+        font-size: 16rem;
+        top: 20%;
+    }
+}
+
+// Section 2 services
+
+.tittles_section2_services { 
+    h2 {
+    font-style: bold;
+    font-weight: 570;
+    font-size: 9rem;
+    line-height: 8.4rem;
+    }
+    p {
+        font-weight: 350;
+        font-size: 4rem;
+        line-height: 4.2rem;
+        margin: 5rem 2rem;
+    }
+}
+
+.card_section2_services, .card_section4_services {
+    width: 30%;
+}
+
+// Section 3 services
+
+.section3_services { 
+    h3 {
+    font-size: 10rem;
+    margin-bottom: 3rem;
+    }
+    a {
+        margin-top: 5rem;
+    }
+}
+
+// Section 4 services
+
+.card_section4_services {
+    height: 700px;
+    h3 {
+        margin-top: 2rem;
+    }
+}
+
+// PAG BLOG //
+
+// Section 1 Blog
+
+.section1_blog {
+    h1{
+        left: 35%;
+        top: 7%;
+    }
+    p {
+        margin: 0 2rem;
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 5.6rem;
+    }    
+}
+
+// Section 2 Blog
+
+.section2_blog , .section3_blog {
+    hr {
+        width: 20%;
+    }
+}
+
+.section2_blog {
+    .cards_section2_blog {
+        .card_section2_blog {
+            h3 {
+                font-size: 3.4rem;
+            }
+            p {
+                font-size: 2.5rem;
+                line-height: 2.6rem;
+            }
+        }
+    }
+}
+
+.section3_blog {
+    .cards_section2_blog {
+        padding: 0 5rem;
+        .card_section2_blog {
+            height: 600px;
+            img {
+                height: 56%;
+            }
+            h3 {
+                font-size: 3.4rem;
+                text-align: left;
+            }
+            p {
+                font-size: 2.5rem;
+                line-height: 2.6rem;
+                text-align: left;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+
+// PAG CONTACT //
+
+.pag_contact {
+    @include grid(repeat(2, 1fr), 1fr );
+    width: 100%;
+    height: 710px;
+}
+
+// Section 1 contact
+
+.section1_contact {
+    img {
+        height: 710px;
+    }
+    h1 {
+        top: 25%;
+        left: 14%;
+    }
+}
+
+// Section 2 contact
+
+.section2_contact {
+    margin-top: 1rem;
+    height: 700px;
+    .form_int {
+        & .checkbox_contact {
+            margin: -2rem 3.5rem;
+        }
+    }
+    .container_logos_form {
+        display: none;
+    }
+}
+
+}

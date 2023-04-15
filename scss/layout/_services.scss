@@ -1,0 +1,156 @@
+// PAG SERVICES BOOSTRAP
+
+// Section 1 services
+
+.section1_services {
+    position: relative;
+    h1 {
+        width: 50%;
+        position: absolute;
+        color: white;
+        font-family: "Texta", "Arial";
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: right;
+        top: 36%;
+        left: 40%;
+    }
+}
+
+// Section 2 services
+
+.tittles_section2_services {
+    font-family: "Texta","Arial";
+    h2 {
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        margin: 3rem auto;
+        margin-right: 2rem;
+    }
+    p {
+        text-align: left;
+        font-weight: 350;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        margin-left: 1rem;
+    }
+}
+
+.cards_section2_services, .cards_section4_services{
+    flex-flow: column nowrap;
+    font-family: "Texta", "Arial";
+}
+
+.card_section2_services, .card_section4_services {
+    color: white;
+    background-color: $color_secundario;
+    border-radius: 2rem;
+    border: 0;
+    margin: 4rem 2rem;
+}
+
+.card_section2_services {
+    img{
+        padding: 1rem;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-style: normal;
+        font-weight: 100;
+        font-size: 2.7rem;
+        line-height: 4rem;
+    }
+    a {
+        font-family: "Texta", "Arial";
+        color: #613B3B;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 3rem;
+        line-height: 4.2rem;
+        background-color: $color_principal;
+        border: 0;
+        border-radius: 2rem;
+        padding: 1rem 6rem;
+        margin: 2rem 0;
+    }
+}
+
+// Section 3 services
+
+.section3_services {
+    background-color: #302F3A;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    div {
+        color: white;
+        font-family: "Texta","Arial";
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 7rem;
+        line-height: 9.8rem;
+    }
+    p {
+        font-style: normal;
+        font-weight: 350;
+        font-size: 3.6rem;
+        line-height: 5rem;
+    }
+    a {
+        font-family: "Texta","Arial";
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 4.2rem;
+        color: white;
+        background-color: #50940D;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        padding: 1.7rem 10rem;
+        border: 0;
+        border-radius: 2rem;
+    }
+}
+
+// Section 4 services
+
+.tittle_section4_services {
+    h3 {
+        font-family: "Texta", "Arial";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        margin: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+.card_section4_services {
+    img {
+        padding: 1rem;
+        margin-bottom: -2.2rem;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 8.4rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+}

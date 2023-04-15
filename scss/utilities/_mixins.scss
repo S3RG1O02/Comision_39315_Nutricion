@@ -1,0 +1,29 @@
+//Font //
+
+@mixin font{
+    font-family: "Texta","Arial";
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font_2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+@mixin grid ($template_columns, $template_rows) {
+    display: grid;
+    grid-template-columns: $template_columns;
+    grid-template-rows: $template_rows;
+}
+
+
+
+@mixin flex ($flex_direction, $wrap, $justify_content, $align_items){
+    display: flex;
+    flex-direction: $flex_direction;
+    flex-wrap: $wrap;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
