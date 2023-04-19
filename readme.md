@@ -1,6 +1,10 @@
-Preentrega 2 Sergio Andres Ruiz Acero 
+Preentrega 3 
+Sergio Andres Ruiz Acero 
 
-Tecnologías usadas: Html, Css, Boostrap 
+Tecnologías usadas: Html, Css, Boostrap, SCSS
+Tecnologia de hosting: netlify.com
 
-En esta preentrega se hizo un responsive en las medidas 374px, 425px, 768px, 1024px y 1440px en 4 de las 5 paginas web.
-La ultima pagina (pag contact) solo tiene vista de mobile 374px y 425px mobile, esto pues el proyecto esta enteramente hecho desde mobile hasta desktop
+
+En esta preentrega se hizo un responsive en las medidas 374px, 425px, 768px, 1024px y 1440px en 5 todas las paginas web, ademas del
+responsive desing, se añadio el preprocesador SASS, con sus correspondientes carpetas y usos debidos, por ultimo se subio el sitio
+web a el Hosting gratiuto "Netlify".
