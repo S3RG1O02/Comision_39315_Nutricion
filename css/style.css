@@ -248,7 +248,8 @@ footer {
   .section2_footer {
     margin-top: 10rem; }
   .section4_footer {
-    margin-top: 15rem; } }
+    margin-top: 7rem;
+    margin-bottom: 3rem; } }
 
 @media (min-width: 1440px) {
   footer {
@@ -329,11 +330,11 @@ footer {
       margin-top: 17px;
       margin-left: 0.1rem; }
   .section5_footer {
-    height: 11%;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     .section5_footer p {
       width: 100%;
-      margin-top: 40px;
+      margin-top: 30px;
       display: block; }
       .section5_footer p br {
         display: none; } }
