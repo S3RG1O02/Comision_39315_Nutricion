@@ -6,10 +6,6 @@
 html {
   font-size: 62.5%; }
 
-@font-face {
-  font-family: "Texta";
-  src: url(../assets/TextaRegular.ttf) format("truetype"); }
-
 .nav_pages {
   width: 100%;
   margin: 0 auto;
@@ -97,6 +93,7 @@ footer {
     line-height: 2.8rem;
     text-align: center; }
   .section2_footer a {
+    font-family: "Texta", "Arial";
     color: white;
     font-weight: 350;
     font-size: 2.7rem;
@@ -197,6 +194,7 @@ footer {
     grid-area: sect2;
     height: 38rem;
     margin-bottom: 6rem;
+    margin-top: 6rem;
     grid-template-rows: repeat(4, 1fr); }
     .section2_footer h3 {
       font-size: 3.5rem; }
@@ -224,7 +222,7 @@ footer {
       margin-left: 4rem; }
   .section4_footer {
     grid-area: sect4;
-    margin-top: -2rem; }
+    margin-top: 4rem; }
     .section4_footer h3 {
       font-size: 3.5rem;
       margin-bottom: 8rem; }
@@ -233,10 +231,10 @@ footer {
       font-size: 3.5rem; }
   .section5_footer {
     grid-area: sect5;
-    margin-top: -10%; }
+    margin-top: -4%; }
     .section5_footer p {
       font-size: 2rem;
-      margin-top: 5%; } }
+      margin-top: 3.6%; } }
 
 @media (min-width: 1024px) {
   footer {
@@ -246,7 +244,11 @@ footer {
       width: 90rem;
       margin-bottom: 1rem; }
     footer .item_special_section1_footer p {
-      margin-top: 2rem; } }
+      margin-top: 2rem; }
+  .section2_footer {
+    margin-top: 10rem; }
+  .section4_footer {
+    margin-top: 15rem; } }
 
 @media (min-width: 1440px) {
   footer {
@@ -530,7 +532,7 @@ footer {
 
 .section2_blog, .section3_blog {
   font-family: "Texta","Arial"; }
-  .section2_blog h2, .section2_blog h3, .section3_blog h2, .section3_blog h3 {
+  .section2_blog h2, .section3_blog h2, .section2_blog h3, .section3_blog h3 {
     font-style: normal;
     font-weight: 800;
     font-size: 2.6rem;
@@ -547,18 +549,18 @@ footer {
     margin: auto;
     margin-bottom: 2rem; }
 
-.cards_section2_blog {
+.cards_section2_blog, .cards_section3_blog {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr; }
-  .cards_section2_blog .card_section2_blog {
+  .cards_section2_blog .card_section2_blog, .cards_section3_blog .card_section2_blog, .cards_section3_blog .card_section3_blog {
     background-color: #302F3A;
     border-radius: 2rem;
     margin: 1rem 3rem; }
-    .cards_section2_blog .card_section2_blog img {
+    .cards_section2_blog .card_section2_blog img, .cards_section3_blog .card_section2_blog img, .cards_section3_blog .card_section3_blog img {
       width: 100%;
       height: 60%; }
-    .cards_section2_blog .card_section2_blog h3 {
+    .cards_section2_blog .card_section2_blog h3, .cards_section3_blog .card_section2_blog h3, .cards_section3_blog .card_section3_blog h3 {
       font-style: normal;
       font-weight: 800;
       font-size: 3rem;
@@ -566,13 +568,13 @@ footer {
       color: white;
       margin: 0 1.3rem;
       text-align: left; }
-    .cards_section2_blog .card_section2_blog a {
+    .cards_section2_blog .card_section2_blog a, .cards_section3_blog .card_section2_blog a, .cards_section3_blog .card_section3_blog a {
       font-style: none;
       text-decoration: none;
       color: white; }
-      .cards_section2_blog .card_section2_blog a:hover {
+      .cards_section2_blog .card_section2_blog a:hover, .cards_section3_blog .card_section2_blog a:hover, .cards_section3_blog .card_section3_blog a:hover {
         color: #c1b3b3; }
-    .cards_section2_blog .card_section2_blog p {
+    .cards_section2_blog .card_section2_blog p, .cards_section3_blog .card_section2_blog p, .cards_section3_blog .card_section3_blog p {
       font-style: normal;
       font-weight: 300;
       font-size: 2rem;
@@ -966,38 +968,38 @@ footer {
   .section2_blog hr, .section3_blog hr {
     width: 34%;
     margin-top: 1rem; }
-  .section2_blog .card_section2_blog {
+  .section2_blog .card_section2_blog, .section3_blog .card_section2_blog, .section2_blog .cards_section3_blog .card_section3_blog, .cards_section3_blog .section2_blog .card_section3_blog, .section3_blog .cards_section3_blog .card_section3_blog, .cards_section3_blog .section3_blog .card_section3_blog {
     border-radius: 3rem;
     margin: 1rem 8rem; }
-    .section2_blog .card_section2_blog h3 {
+    .section2_blog .card_section2_blog h3, .section3_blog .card_section2_blog h3, .section2_blog .cards_section3_blog .card_section3_blog h3, .cards_section3_blog .section2_blog .card_section3_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3, .cards_section3_blog .section3_blog .card_section3_blog h3 {
       font-size: 6rem;
       line-height: 8rem;
       margin-top: 2rem;
       margin-left: 2rem;
       text-align: left; }
-    .section2_blog .card_section2_blog p {
+    .section2_blog .card_section2_blog p, .section3_blog .card_section2_blog p, .section2_blog .cards_section3_blog .card_section3_blog p, .cards_section3_blog .section2_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p, .cards_section3_blog .section3_blog .card_section3_blog p {
       margin-left: 2rem;
       font-size: 4rem;
       line-height: 6rem; }
   .section3_blog {
     margin-top: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    margin: 4rem 0; }
     .section3_blog hr {
       margin-bottom: 4rem; }
     .section3_blog .cards_section3_blog {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr; }
-  .card_section3_blog {
-    margin: 2rem;
-    height: 500px; }
-    .card_section3_blog h3 {
-      font-style: normal;
-      font-weight: 800;
-      font-size: 3rem;
-      line-height: 4.2rem; }
-    .card_section3_blog p {
-      display: none; }
+    .section3_blog .card_section2_blog, .section3_blog .cards_section3_blog .card_section3_blog, .cards_section3_blog .section3_blog .card_section3_blog {
+      margin: 2rem; }
+      .section3_blog .card_section2_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3, .cards_section3_blog .section3_blog .card_section3_blog h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 4.2rem; }
+      .section3_blog .card_section2_blog p, .section3_blog .cards_section3_blog .card_section3_blog p, .cards_section3_blog .section3_blog .card_section3_blog p {
+        display: none; }
   .section1_contact img {
     height: 570px; }
   .section1_contact h1 {
@@ -1071,6 +1073,8 @@ footer {
     display: none; } }
 
 @media (min-width: 1024px) {
+  .menu_navbar ul li a {
+    padding: 0.7rem; }
   .section1_home img {
     height: 58rem; }
   .section1_home h1 {
@@ -1180,34 +1184,34 @@ footer {
     left: 29.5%; }
   .section1_blog p {
     top: 65%; }
-  .section2_blog, .section3_blog {
+  .section2_blog, .section3_blog, .section3_blog {
     margin-top: 3rem;
     margin-bottom: 9rem; }
-    .section2_blog hr, .section3_blog hr {
+    .section2_blog hr, .section3_blog hr, .section3_blog hr {
       margin-bottom: 4rem;
       width: 24%; }
-    .section2_blog .cards_section2_blog, .section3_blog .cards_section2_blog {
+    .section2_blog .cards_section2_blog, .section3_blog .cards_section2_blog, .section2_blog .cards_section3_blog, .section3_blog .cards_section3_blog, .section3_blog .cards_section2_blog, .section3_blog .cards_section3_blog {
       width: 100%;
       display: flex;
       flex-flow: row wrap; }
-      .section2_blog .cards_section2_blog .card_section2_blog, .section3_blog .cards_section2_blog .card_section2_blog {
+      .section2_blog .cards_section2_blog .card_section2_blog, .section3_blog .cards_section2_blog .card_section2_blog, .section2_blog .cards_section3_blog .card_section2_blog, .section3_blog .cards_section3_blog .card_section2_blog, .cards_section3_blog .section2_blog .cards_section2_blog .card_section3_blog, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog, .section2_blog .cards_section3_blog .card_section3_blog, .section3_blog .cards_section3_blog .card_section3_blog, .section3_blog .cards_section2_blog .card_section2_blog, .section3_blog .cards_section3_blog .card_section2_blog, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog, .section3_blog .cards_section3_blog .card_section3_blog {
         width: 29%;
         height: 600px;
         margin: 0 auto; }
-        .section2_blog .cards_section2_blog .card_section2_blog h3, .section3_blog .cards_section2_blog .card_section2_blog h3 {
+        .section2_blog .cards_section2_blog .card_section2_blog h3, .section3_blog .cards_section2_blog .card_section2_blog h3, .section2_blog .cards_section3_blog .card_section2_blog h3, .section3_blog .cards_section3_blog .card_section2_blog h3, .cards_section3_blog .section2_blog .cards_section2_blog .card_section3_blog h3, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog h3, .section2_blog .cards_section3_blog .card_section3_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3, .section3_blog .cards_section2_blog .card_section2_blog h3, .section3_blog .cards_section3_blog .card_section2_blog h3, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3 {
           font-size: 3rem;
           line-height: 3.4rem;
           margin: 1rem; }
-        .section2_blog .cards_section2_blog .card_section2_blog p, .section3_blog .cards_section2_blog .card_section2_blog p {
+        .section2_blog .cards_section2_blog .card_section2_blog p, .section3_blog .cards_section2_blog .card_section2_blog p, .section2_blog .cards_section3_blog .card_section2_blog p, .section3_blog .cards_section3_blog .card_section2_blog p, .cards_section3_blog .section2_blog .cards_section2_blog .card_section3_blog p, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog p, .section2_blog .cards_section3_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p, .section3_blog .cards_section2_blog .card_section2_blog p, .section3_blog .cards_section3_blog .card_section2_blog p, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p {
           font-size: 2rem;
           line-height: 2rem;
           margin: 1rem; }
   .section3_blog {
     margin-top: 2rem; }
-    .section3_blog .cards_section2_blog .card_section3_blog {
+    .section3_blog .cards_section2_blog .card_section3_blog, .section3_blog .cards_section3_blog .card_section3_blog {
       margin-bottom: 3rem;
       height: 720px; }
-      .section3_blog .cards_section2_blog .card_section3_blog p {
+      .section3_blog .cards_section2_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p {
         display: inline-block;
         font-size: 2rem;
         line-height: 2.7rem; }
@@ -1334,23 +1338,23 @@ footer {
     font-weight: 300;
     font-size: 4rem;
     line-height: 5.6rem; }
-  .section2_blog hr, .section3_blog hr {
+  .section2_blog hr, .section3_blog hr, .section3_blog hr {
     width: 20%; }
-  .section2_blog .cards_section2_blog .card_section2_blog h3 {
+  .section2_blog .cards_section2_blog .card_section2_blog h3, .section3_blog .cards_section2_blog .card_section2_blog h3, .section2_blog .cards_section3_blog .card_section2_blog h3, .section3_blog .cards_section3_blog .card_section2_blog h3, .cards_section3_blog .section2_blog .cards_section2_blog .card_section3_blog h3, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog h3, .section2_blog .cards_section3_blog .card_section3_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3 {
     font-size: 3.4rem; }
-  .section2_blog .cards_section2_blog .card_section2_blog p {
+  .section2_blog .cards_section2_blog .card_section2_blog p, .section3_blog .cards_section2_blog .card_section2_blog p, .section2_blog .cards_section3_blog .card_section2_blog p, .section3_blog .cards_section3_blog .card_section2_blog p, .cards_section3_blog .section2_blog .cards_section2_blog .card_section3_blog p, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog p, .section2_blog .cards_section3_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p {
     font-size: 2.5rem;
     line-height: 2.6rem; }
-  .section3_blog .cards_section2_blog {
+  .section3_blog .cards_section2_blog, .section3_blog .cards_section3_blog {
     padding: 0 5rem; }
-    .section3_blog .cards_section2_blog .card_section2_blog {
+    .section3_blog .cards_section2_blog .card_section2_blog, .section3_blog .cards_section3_blog .card_section2_blog, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog, .section3_blog .cards_section3_blog .card_section3_blog {
       height: 600px; }
-      .section3_blog .cards_section2_blog .card_section2_blog img {
+      .section3_blog .cards_section2_blog .card_section2_blog img, .section3_blog .cards_section3_blog .card_section2_blog img, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog img, .section3_blog .cards_section3_blog .card_section3_blog img {
         height: 56%; }
-      .section3_blog .cards_section2_blog .card_section2_blog h3 {
+      .section3_blog .cards_section2_blog .card_section2_blog h3, .section3_blog .cards_section3_blog .card_section2_blog h3, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog h3, .section3_blog .cards_section3_blog .card_section3_blog h3 {
         font-size: 3.4rem;
         text-align: left; }
-      .section3_blog .cards_section2_blog .card_section2_blog p {
+      .section3_blog .cards_section2_blog .card_section2_blog p, .section3_blog .cards_section3_blog .card_section2_blog p, .cards_section3_blog .section3_blog .cards_section2_blog .card_section3_blog p, .section3_blog .cards_section3_blog .card_section3_blog p {
         font-size: 2.5rem;
         line-height: 2.6rem;
         text-align: left;

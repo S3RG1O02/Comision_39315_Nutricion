@@ -26,7 +26,7 @@
 
 // Section 2 Blog
 
-.section2_blog, .section3_blog {
+.section2_blog {
     font-family: "Texta","Arial";
     h2, h3 {
         font-style: normal;
@@ -89,8 +89,15 @@
 }
 
 // Section 3 Blog
+
+.section3_blog {
+    @extend .section2_blog;
+}
+
 .cards_section3_blog {
+    @extend .cards_section2_blog;
     .card_section3_blog {
+        @extend .card_section2_blog;
         height: 700px;
         border-radius: 4rem;
         overflow: hidden;

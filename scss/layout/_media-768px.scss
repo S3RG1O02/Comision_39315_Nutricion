@@ -249,7 +249,7 @@
 
 // Section 2 Blog
 
-.section2_blog, .section3_blog {
+.section2_blog {
     h2 {
         font-size: 3rem;
     }
@@ -282,6 +282,7 @@
 .section3_blog {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    margin: 4rem 0;
     hr {
         margin-bottom: 4rem;
     }
@@ -290,19 +291,17 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-}
-
-.card_section3_blog {
-    margin: 2rem;
-    height: 500px;
-    h3 {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 3rem;
-        line-height: 4.2rem;
-    }
-    p {
-        display: none;
+    .card_section2_blog {
+        margin: 2rem;
+        h3 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem;
+            line-height: 4.2rem;
+        }
+        p {
+            display: none;
+        }
     }
 }
 

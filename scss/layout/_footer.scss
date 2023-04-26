@@ -75,6 +75,7 @@ footer {
         text-align: center;
     }   
     a{
+        font-family: "Texta", "Arial";
         color: white;
         font-weight: 350;
         font-size: 2.7rem;
@@ -218,6 +219,7 @@ footer {
         grid-area: sect2;
         height: 38rem;
         margin-bottom: 6rem;
+        margin-top: 6rem;
         grid-template-rows: repeat(4, 1fr);
         h3 {
             font-size: 3.5rem;
@@ -258,7 +260,7 @@ footer {
 
     .section4_footer {
         grid-area: sect4;
-        margin-top: -2rem;
+        margin-top: 4rem;
         h3 {
             font-size: 3.5rem;
             margin-bottom: 8rem;
@@ -273,10 +275,10 @@ footer {
 
     .section5_footer {
         grid-area: sect5;
-        margin-top: -10%;
+        margin-top: -4%;
         p {
             font-size: 2rem;
-            margin-top: 5%;
+            margin-top: 3.6%;
         }
     }
 }
@@ -297,6 +299,14 @@ footer {
             
             }
         }
+    }
+
+    .section2_footer {
+        margin-top: 10rem;
+    }
+
+    .section4_footer {
+        margin-top: 15rem;
     }
 }
 
